@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit burst shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
 
+<body>
+    <!-- header section -->
+    <header class="font-lato bg-red-400 h-[120px] my-12 py-9 mx-28 rounded-full text-white">
+        <nav class="flex justify-around items-center">
+            <!-- nav list item -->
+            <div>
+                <ul class="flex gap-8">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All fruits</a></li>
+                </ul>
+            </div>
+            <!-- nav logo item -->
+            <div class="flex items-center gap-4">
+                <img src="images/logo.png" alt="">
+                <h1 class="text-4xl font-extrabold">
+                    Fruit Burst
+                </h1>
+            </div>
+            <!-- search box item -->
+            <div>
+                <input class="w-80 h-11 rounded-full pl-7 text-black outline-none" type="search" name="search"
+                    id="search" placeholder="Search here">
+            </div>
+        </nav>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
