@@ -152,7 +152,7 @@
                         It has roots in a piece of classical <br>
                         Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-     <!-- fruits ratings card -->
+
                 <div>
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                         <div class="flex flex-col">
@@ -183,14 +183,17 @@
                 </div>
             </div>
             <div>
+                <!-- fruits ratings card -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-28 gap-4 my-20">
-                    <div class="card bg-base-100 border border-gray-300">
+                    <!-- first fruit ratings  -->
+                    <div class="card bg-base-100 border border-gray-200">
                         <figure class="px-10 pt-10">
                             <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
                         </figure>
+                        <!-- card one fruits ratings information -->
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.30$-18.85$</h2>
-                            <p>Apples</p>
+                            <p class="text-gray-400">Apples</p>
                             <div>
                                 <div class="rating rating-half">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
@@ -216,18 +219,31 @@
                                         class="bg-red-400 mask mask-star-2 mask-half-2" />
                                 </div>
                             </div>
-                            <div class="card-details">
-                                <p class="text-red-400"><a href="">Details</a></p>
+                            <div>
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn" onclick="my_modal_1.showModal()">Details</button>
+                                <dialog id="my_modal_1" class="modal">
+                                    <form method="dialog" class="modal-box">
+                                        <h3 class="font-bold text-lg">Hello!</h3>
+                                        <p class="py-4">Press ESC key or click the button below to close</p>
+                                        <div class="modal-action">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close</button>
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 border border-gray-300">
+                    <!-- second fruit ratings  -->
+                    <div class="card bg-base-100 border border-gray-200">
                         <figure class="px-10 pt-10">
                             <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
                         </figure>
+                        <!-- card two fruits ratings information -->
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.30$-18.85$</h2>
-                            <p>Orange</p>
+                            <p class="text-gray-400">Orange</p>
                             <div>
                                 <div class="rating rating-half">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
@@ -258,13 +274,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 border border-gray-300">
+                    <!-- third fruit ratings  -->
+                    <div class="card bg-base-100 border border-gray-200">
                         <figure class="px-10 pt-10">
                             <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
                         </figure>
+                        <!-- card third fruits ratings information -->
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.30$-18.85$</h2>
-                            <p>Red Dragon</p>
+                            <p class="text-gray-400">Red Dragon</p>
                             <div>
                                 <div class="rating rating-half">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
@@ -291,17 +309,19 @@
                                 </div>
                             </div>
                             <div class="card-details">
-                                <p><a href="">Details</a></p>
+                                <p class="text-red-400"><a href="">Details</a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 border border-gray-300">
+                    <!-- fourth fruit ratings  -->
+                    <div class="card bg-base-100 border border-gray-200">
                         <figure class="px-10 pt-10">
                             <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
                         </figure>
+                        <!-- card fourth fruits ratings information -->
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.30$-18.85$</h2>
-                            <p>Bananas</p>
+                            <p class="text-gray-400">Bananas</p>
                             <div>
                                 <div class="rating rating-half">
                                     <input type="radio" name="rating-10" class="rating-hidden" />
@@ -333,6 +353,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- shop all button style -->
+            <div class="flex justify-center">
+                <button class="h-14 rounded-md w-32 text-white bg-red-400 font-bold ">Shop All</button>
             </div>
         </section>
     </main>
