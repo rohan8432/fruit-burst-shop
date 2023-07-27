@@ -2,118 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-   
-    <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+  <!-- <header class="font-lato bg-red-400 h-[120px] text-white">
+    <label class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
 
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class=" text-center text-neutral-content">
-
-
-
-            <div class="carousel relative mx-28">
-                <!-- slide one design -->
-                <div id="slide1" class="carousel-item  w-full ">
-                    <!-- slide one image  -->
-                    <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
-
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class=" text-center text-neutral-content">
-
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
-                    </div>
-                    <!-- slide one information -->
-                    <div class="text-white absolute left-[315px] text-center pt-9 font-lato space-y-6">
-                        <h1 class="text-5xl font-extrabold">
-                            Exotic tastes at your <br>
-                            doorstep
-                        </h1>
-                        <p>We supply highly quality organic products</p>
-                        <button class="h-14 rounded-md w-32 bg-red-400 ">Shop Now</button>
-                    </div>
-                </div>
-
-
-
-                <!-- slide two design -->
-                <div id="slide2" class="carousel-item relative w-full">
-                    <!-- slide two image  -->
-                    <div class="hero min-h-screen" style="background-image: url(images/banner2.png);">
-
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class=" text-center text-neutral-content">
-
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                    </div>
-                    <!-- slide two information -->
-                    <div class="text-white absolute left-[315px] text-center pt-9 font-lato space-y-6">
-                        <h1 class="text-5xl font-extrabold">
-                            Exotic tastes at your <br>
-                            doorstep
-                        </h1>
-                        <p>We supply highly quality organic products</p>
-                        <button class="h-14 rounded-md w-32 bg-red-400 ">Shop Now</button>
-                    </div>
-                </div>
-
-                <!-- slide three design -->
-                <div id="slide3" class="carousel-item relative w-full">
-                    <!-- slide three image  -->
-                    <div class="hero min-h-screen" style="background-image: url(images/banner3.png);">
-
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class=" text-center text-neutral-content">
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
-                    </div>
-                    <!-- slide three information -->
-                    <div class="text-white absolute left-[315px] text-center pt-9 font-lato space-y-6">
-                        <h1 class="text-5xl font-extrabold">
-                            Exotic tastes at your <br>
-                            doorstep
-                        </h1>
-                        <p>We supply highly quality organic products</p>
-                        <button class="h-14 rounded-md w-32 bg-red-400 ">Shop Now</button>
-                    </div>
-                </div>
-                <!-- slide four design -->
-                <div id="slide4" class="carousel-item relative w-full">
-                    <!-- slide four image  -->
-                    <div class="hero min-h-screen" style="background-image: url(images/banner4.png);">
-
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class=" text-center text-neutral-content">
-
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
-                    <!-- slide four information -->
-                    <div class="text-white absolute left-[315px] text-center pt-9 font-lato space-y-6">
-                        <h1 class="text-5xl font-extrabold">
-                            Exotic tastes at your <br>
-                            doorstep
-                        </h1>
-                        <p>We supply highly quality organic products</p>
-                        <button class="h-14 rounded-md w-32 bg-red-400 ">Shop Now</button>
-                    </div>
-                </div>
-            </div>
+    <nav class="flex justify-around items-center">
+      
+        <div>
+            <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All fruits</a></li>
+            </ul>
+        </div>
+      
+        <div class="flex items-center gap-4">
+            <img src="images/logo.png" alt="">
+            <h1 class="text-4xl font-extrabold">
+                Fruit Burst
+            </h1>   
+        </div>
+        <div class="navbar-center hidden lg:flex gap-8">
+          <ul class="menu menu-horizontal px-1 gap-11">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+        </div>
+       
+        <div>
+            <input class="w-80 h-11 rounded-full pl-7 text-black outline-none" type="search" name="search"
+                id="search" placeholder="Search here">
+        </div>
+        <label class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        
+    </nav>
+</header> -->
 
 
+  <header>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
 
+        <div class="flex justify-between items-center">
+          <ul class="flex gap-20">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+          </ul>
+          <div class="flex items-center">
+              <img src="images/logo.png" alt="">
+              <h1 class="text-4xl font-extrabold">
+                Fruit Burst
+              </h1> 
+          </div>
+          <div>
+              <input class="w-80 h-11 rounded-full pl-7 text-black outline-none" type="search" name="search"
+                  id="search" placeholder="Search here">
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </header>
 
 </body>
 
