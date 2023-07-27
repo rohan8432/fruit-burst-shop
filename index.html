@@ -30,7 +30,7 @@
     </style>
 </head>
 
-<body>
+<body class="font-lato">
     <!-- header section -->
     <header class="font-lato lg:mx-28 lg:my-10 my-3 mx-5">
         <div class="navbar lg:h-[120px] rounded-full bg-red-400">
@@ -69,6 +69,9 @@
             <div>
                 <input class="lg:w-80 w-36 lg:h-11 h-8 rounded-full ml-10 pl-7 text-black outline-none" type="search"
                     name="search" id="search" placeholder="Search here">
+                   <div class="relative right-7 ">
+                    <img src="./images/search.png" alt="">
+                   </div>
             </div>
         </div>
     </header>
@@ -153,6 +156,29 @@
                     </div>
                 </div>
             </div>
+                <div class="lg:flex gap-5 justify-center mx-28 bg-white hidden h-[180px] w-[850px] relative left-24 bottom-24 text-center items-center">
+              <div>
+                <img src="./images/fruit1.png" alt="">
+                <p>Strawberry</p>
+              </div>
+              <div>
+                <img src="./images/fruit2.png" alt="">
+                <p>Orange</p>
+              </div>
+              <div>
+                <img src="./images/fruit3.png" alt="">
+                <p>Mango</p>
+              </div>
+              <div>
+                <img src="./images/fruit4.png" alt="">
+                <p>Strawberry</p>
+              </div>
+              <div>
+                <img src="./images/fruit5.png" alt="">
+                <p>Mango</p>
+              </div>
+                    
+                </div>
         </section>
         <!-- Deal of the day and countdown section  -->
         <section class="my-20 lg:mx-auto font-lato">
@@ -534,7 +560,7 @@
         <!-- team section design  -->
         <section class="lg:mx-28 mx-5">
             <!-- background image included -->
-            <div class="hero min-h-screen " style="background-image: url(images/team.png);">
+            <div class="hero min-h-screen" style="background-image: url(images/team.png);">
 
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class=" text-center text-neutral-content">
@@ -615,7 +641,14 @@
             </div>
         </section>
         <!-- why choose us information section  -->
-        <section class="mx-28 my-10">
+        <section class="lg:mx-28 mx-5 my-10">
+            <div class="text-center lg:pb-2 pb-10">
+                <h1 class="text-4xl font-bold pb-6">Why choose us</h1>
+                <p>Contrary to popular belief, is not simply random text. It has roots in
+                     a <br>
+                      piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <!-- information list  -->
             <div class="lg:flex flex-row lg:gap-11 space-y-6 items-center">
                 <div>
                     <div class="flex pb-3">
@@ -642,7 +675,7 @@
                     <p class="bg-black h-0.5 w-[100px]"></p>
                     <p class="text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
-                <div>
+                <div class="flex justify-center">
                     <img src="./images/whychoose1.png" alt="">
                 </div>
                 <div class="">
@@ -672,10 +705,7 @@
                     </div>
                     <p class="bg-black h-0.5 w-[100px]"></p>
                     <p class="pb-3 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-    
                 </div>
-    
-    
         </section>
     
         <!-- footer section   -->
